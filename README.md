@@ -7,7 +7,7 @@
 ## About this project
 
 This is an ecommerce frontend project build with React CRA.
-We use styled-components (css in javascript ) for the styling. Firebase for our authentication, sign in with google and user/product data storage.
+We use styled-components (css in javascript ) for the styling. Firebase for our authentication, sign in with google and user/product data storage. And context api for state management, but you can use redux if you wish.
 <br />
 
 #### Features
