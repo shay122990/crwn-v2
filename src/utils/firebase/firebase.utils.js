@@ -19,6 +19,7 @@ import {
   getDocs,
 } from "firebase/firestore";
 
+//This is where you will place your own firebase config, after setting up the project on firebase.
 const firebaseConfig = {
   apiKey: "AIzaSyBWVrV9mA1BfcOyZzwSUWT7dg9Tm_y0K7s",
   authDomain: "crwn-v2-9f437.firebaseapp.com",

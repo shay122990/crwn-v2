@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# [CRWN-CLOTHING](https://papaya-creponne-dbcdad.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Preview
 
-## Available Scripts
+![preview](./public/preview.gif)
 
-In the project directory, you can run:
+## About this project
 
-### `npm start`
+This is an ecommerce frontend project build with React CRA.
+We use styled-components (css in javascript ) for the styling. Firebase for our authentication, sign in with google and user/product data storage.
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A simple navigation bar, to go through different routes using the latest React-Router-Dom V6 method.
+- A directory preview with all the product available inside the home page. Uppon clicking on each directory item, you'll be redirected to the related content.
+- A Sign In page...
 
-### `npm test`
+  - A sign in with Google method. As you sign in with google, you'll be automatically registered as a new user.
+  - A local Sign up option with confirm password.
+  - If you registered with google sign in or through the local register option. You will be able to sign in with email and password.
+    ![preview](./public/sign-in.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add to cart function. Add any item and it will show up in your cart.
+- A cart dropdown preview. You'll be able to see all the items you've added to your cart. A number of your total items will appear in the shop icon. And you'll be able to scroll through the cart dropdown.
+- A checkout page. All the items that you've added will automatically show on the checkout page. You can increase or decrease the number of the item and the price will automatically be updated. And you can remove the product.
+- Shop Page will display all the categories with 4 items of each category for preview. If you click on any of the categories, it will redirect to the individual category and display more related products.
 
-### `npm run build`
+## How to fork and clone:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can see the fork button in the top right corner of every GitHub project; click it and a copy of the project will be added to your GitHub profile under the same name as the original project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## After you fork and clone:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Install dependencies
 
-### `npm run eject`
+In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Set your firebase config
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Remember to replace the config variable in your firebase.utils.js with your own config object from the firebase dashboard! Navigate to the project settings gear icon > project settings and scroll down to the config code. Copy the object in the code and replace the variable in your cloned code.
+<img width="1261" alt="Screen Shot 2022-03-11 at 8 51 22 PM" src="https://user-images.githubusercontent.com/10578605/157999158-10e921cc-9ee5-46f6-a0c5-1ae5686f54f3.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Build & Deploy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you wish to deploy with [Netlify](https://www.netlify.com)
 
-## Learn More
+```
+1. Create or don't delete the _redirect file inside public folder. The code inside will help with the refresh of the page to redirect correctly.
+2. Update the netlify domain on your firebase authentication. So the sign in feature will work.
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Firebase-auth](./public/firebase-auth.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Dependencies Ref
 
-### Code Splitting
+- [styled-components](https://styled-components.com)
+- [sass](https://sass-lang.com)
+- [Firebase](https://firebase.google.com)
+- [React Router V6](https://reactrouter.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+```
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Copyright (c) 2021 Shay Asanova
 
-### Making a Progressive Web App
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Advanced Configuration
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+shay[dot]asanova[at]gmail[dot]com
