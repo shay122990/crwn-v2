@@ -67,12 +67,7 @@ export const getCategoriesAndDocuments = async () => {
   const q = query(collectionRef);
   //this will give us an array of the individual documents inside. Snapshots is the actual data.
   const querySnapshot = await getDocs(q);
-  const categoryMap = querySnapshot.docs.reduce((accumilator, docSnapshot) => {
-    const { title, items } = docSnapshot.data();
-    accumilator[title.toLowerCase()] = items;
-    return accumilator;
-  }, {});
-  return categoryMap;
+  return querySnapshot.docs.map((docSnapshot) => docSnapshot.data());
 };
 
 export const createUserDocumentFromAuth = async (

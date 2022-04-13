@@ -19,7 +19,7 @@ We use styled-components (css in javascript ) for the styling. Firebase for our 
   - A sign in with Google method. As you sign in with google, you'll be automatically registered as a new user.
   - A local Sign up option with confirm password.
   - If you registered with google sign in or through the local register option. You will be able to sign in with email and password.
-  
+
     ![preview](./public/sign-in.gif)
 
 - Add to cart function. Add any item and it will show up in your cart.
@@ -35,7 +35,7 @@ You can see the fork button in the top right corner of every GitHub project; cli
 
 ## Install dependencies
 
-In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
+In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project. And then yarn/npm start to load the project.
 
 ## Set your firebase config
 
