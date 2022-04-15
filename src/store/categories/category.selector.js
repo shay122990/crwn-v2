@@ -4,14 +4,14 @@ import { createSelector } from "reselect";
 // changed, just don't even bother re rendering.
 
 const selectCategoryReducer = (state) => {
-  console.log("selector 1 fired");
+  // console.log("selector 1 fired");
   return state.categories;
 };
 
 export const selectCategories = createSelector(
   [selectCategoryReducer],
   (categoriesSlice) => {
-    console.log("selector 2 fired");
+    // console.log("selector 2 fired");
     return categoriesSlice.categories;
   }
 );
@@ -19,7 +19,7 @@ export const selectCategories = createSelector(
 export const selectCategoriesMap = createSelector(
   [selectCategories],
   (categories) => {
-    console.log("selector 3 fired");
+    // console.log("selector 3 fired");
     //   as long as the categories array does not change,
     // do not rerun this method, just give back the prev calculated value
     return categories.reduce((accumilator, category) => {
