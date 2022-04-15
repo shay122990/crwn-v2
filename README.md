@@ -26,6 +26,7 @@ We use styled-components (css in javascript ) for the styling. Firebase for our 
 - A cart dropdown preview. You'll be able to see all the items you've added to your cart. A number of your total items will appear in the shop icon. And you'll be able to scroll through the cart dropdown.
 - A checkout page. All the items that you've added will automatically show on the checkout page. You can increase or decrease the number of the item and the price will automatically be updated. And you can remove the product.
 - Shop Page will display all the categories with 4 items of each category for preview. If you click on any of the categories, it will redirect to the individual category and display more related products.
+- Redux Persist: Redux Persist is a tool that allows us to persist our reducer values inside of local storage. Through this, we're able to actually retain the initial state that the user previously had. If you refresh the page, your cart items will persist/remain.
 
 ## How to fork and clone:
 
